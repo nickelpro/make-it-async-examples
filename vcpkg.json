@@ -1,0 +1,20 @@
+{
+  "name": "asio-examples",
+  "version": "1.0.0",
+  "description": "Examples written for a blog post about ASIO async resources",
+  "homepage": "https://blog.vito.nyc/posts/make-it-async/",
+  "maintainers": [
+    "Vito Gamberini <vito@gamberini.email>"
+  ],
+  "license": "CC0-1.0",
+  "dependencies": [
+    "asio"
+  ],
+  "vcpkg-configuration": {
+    "default-registry": {
+      "kind": "git",
+      "baseline": "a4275b7eee79fb24ec2e135481ef5fce8b41c339",
+      "repository": "https://github.com/microsoft/vcpkg.git"
+    }
+  }
+}

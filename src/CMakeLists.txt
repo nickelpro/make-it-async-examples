@@ -1,0 +1,5 @@
+add_subdirectory(AppendixA)
+add_subdirectory(Figure1)
+add_subdirectory(Figure2)
+add_subdirectory(Figure3)
+add_subdirectory(Figure4)
