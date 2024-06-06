@@ -1,4 +1,4 @@
-# ASIO Blog Post Examples
+# "Make it Async" Examples
 
 This is a set of examples for [a blog post](https://vito.nyc/posts/make-it-async/)
 I wrote about building asynchronous resources in ASIO. It also serves as maybe

@@ -1,3 +1,4 @@
+import sys
 import Figure2
 
 count = 0
@@ -10,4 +11,17 @@ def app(incoming: bytes):
   return msg
 
 
-Figure2.run(app)
+if '-h' in sys.argv or '--help' in sys.argv or len(sys.argv) > 2:
+  print(f'Usage: {sys.argv[0]} [host[:port]]')
+  exit()
+
+host = "localhost"
+port = "8000"
+
+if len(sys.argv) == 2:
+  host_port = sys.argv[1].split(":")
+  host = host_port[0]
+  if len(host_port) > 1:
+    port = host_port[1]
+
+Figure2.run(app, host, port)
