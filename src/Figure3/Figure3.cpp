@@ -169,12 +169,15 @@ PyObject* run(PyObject* self, PyObject* const* args, Py_ssize_t nargs,
 
   PythonApp app {appObj};
   accept(io.get_executor(), host, port, app);
+
+  PyThreadState* thread {PyEval_SaveThread()};
   io.run();
 
   signals.cancel();
   signals.clear();
   std::signal(SIGINT, old_sigint);
 
+  PyEval_RestoreThread(thread);
   Py_DecRef(appObj);
   Py_RETURN_NONE;
 }
