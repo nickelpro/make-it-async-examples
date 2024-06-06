@@ -1,6 +1,6 @@
 # "Make it Async" Examples
 
-This is a set of examples for [a blog post](https://vito.nyc/posts/make-it-async/)
+This is a set of examples for [a blog post](https://blog.vito.nyc/posts/make-it-async/)
 I wrote about building asynchronous resources in ASIO. It also serves as maybe
 an interesting case study of ASIO's support for C++20 coroutines, or perhaps for
 integrating C++ I/O with Python application logic. It's got a little of
